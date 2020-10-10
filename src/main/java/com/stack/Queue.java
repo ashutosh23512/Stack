@@ -16,4 +16,8 @@ public class Queue {
 		list.print();
 	}
 
+	public INode dequeue() {
+		return list.popfirst();
+	}
+
 }
