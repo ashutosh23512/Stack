@@ -56,4 +56,21 @@ public class StackTest {
 		queue.print();
 
 	}
+
+	@Test
+	public void Queue_dequeue() {
+		System.out.println("Queue Dequeue");
+
+		DataStruc<Integer> firstnodeadd = new DataStruc<Integer>(56);
+		DataStruc<Integer> secondnodeadd = new DataStruc<Integer>(30);
+		DataStruc<Integer> thirdnodeadd = new DataStruc<Integer>(70);
+		Queue queue = new Queue();
+		queue.enqueue(firstnodeadd);
+		queue.enqueue(secondnodeadd);
+		queue.enqueue(thirdnodeadd);
+		queue.print();
+		queue.dequeue();
+		queue.print();
+
+	}
 }
