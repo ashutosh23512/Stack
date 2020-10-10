@@ -18,5 +18,12 @@ public class Stack {
 	public void print() {
 		list.print();
 	}
+	public int peak() {
+		return (int) list.head.getkey();
+	}
+
+	public INode pop() {
+		return list.popfirst();
+	}
 
 }
